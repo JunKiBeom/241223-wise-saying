@@ -13,6 +13,8 @@ class App {
         Scanner scanner = new Scanner(System.in);
         System.out.println("== 명언 앱 ==");
 
+        int lastNo = 1; // 반목문의 영향이 없는 위에다가 선언
+
         while(true) {
             System.out.print("명령) ");
             String command = scanner.nextLine();
@@ -28,7 +30,8 @@ class App {
                 System.out.print("작가 : ");
                 scanner.nextLine();
 
-                System.out.println("1번 명언이 등록되었습니다.");
+                System.out.println(lastNo+"번 명언이 등록되었습니다.");
+                lastNo++;
             }
         }
     }
