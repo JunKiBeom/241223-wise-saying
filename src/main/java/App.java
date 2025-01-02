@@ -1,7 +1,6 @@
 import wiseSaying.SystemController;
 import wiseSaying.WiseSayingController;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class App {
@@ -18,8 +17,7 @@ public class App {
 
     public void run() {
 
-        wiseSayingController.add("꿈을 지녀라. 그러면 어려운 현실을 이길 수 있다.", "월트 디즈니");
-        wiseSayingController.add("현재를 사랑하라", "작자 미상");
+        wiseSayingController.makeTestData();
 
         System.out.println("== 명언 앱 ==");
         while (true) {
@@ -44,7 +42,4 @@ public class App {
             }
         }
     }
-
-
-
 }
